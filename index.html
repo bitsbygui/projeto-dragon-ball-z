@@ -3,13 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto X-Men</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Projeto Dragon Ball Z</title>
   </head>
   <body>
     <header class="cabecalho"></header>
     <main class="selecao-de-personagens">
-      <section class="personagens"></section>
-      <section class="personagem-selecionado"></section>
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens">
+          <li class="personagem" id="goku">
+            <img src="./src/imagens/card-goku.jpg" alt="Personagem Goku" />
+          </li>
+          <li class="personagem" id="vegeta">
+            <img src="./src/imagens/card-vegeta.jpg" alt="Personagem Vegeta" />
+          </li>
+          <li class="personagem" id="gohan">
+            <img src="./src/imagens/card-gohan.jpg" alt="Personagem Gohan" />
+          </li>
+          <li class="personagem" id="piccolo">
+            <img
+              src="./src/imagens/card-piccolo.jpg"
+              alt="Personagem Piccolo"
+            />
+          </li>
+          <li class="personagem" id="freeza">
+            <img src="./src/imagens/card-freeza.jpg" alt="Personagem freeza" />
+          </li>
+          <li class="personagem" id="android-17">
+            <img
+              src="./src/imagens/card-android17.jpg"
+              alt="Personagem Android 17"
+            />
+          </li>
+          <li class="personagem" id="cell">
+            <img src="./src/imagens/card-cell.jpg" alt="Personagem Cell" />
+          </li>
+          <li class="personagem" id="majinboo">
+            <img
+              src="./src/imagens/card-majinboo.jpg"
+              alt="Personagem Majin Boo"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img class="personagem-grande" src="./src/imagens/card-goku.png" alt="Personagem Selecionado">
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Goku</h2>
+          <p class="descricao-personagem" id="descricao-personagem">O protagonista da série, um Saiyajin que é conhecido por sua força incomparável e sua busca pela paz.</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
