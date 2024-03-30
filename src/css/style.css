@@ -1,40 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+:root {
+  --cor1: #f2c53d;
+  --cor2: #f29f05;
+  --cor3: #d97904;
+  --cor4: #8c0303;
+  --cor5: #590202;
+}
 body {
-      font-family: 'Oxanium', sans-serif;
-  }
+  background-color: rgb(0, 0, 0);
+  font-family: "Oxanium", sans-serif;
+  height: 100vh;
+}
+body::before {
+  background-image: url(../imagens/bg-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
 .cabecalho {
-      display: flex;
-      justify-content: center;
-  }
-
-  .logo {
-    width: 200px;
-    height: 150px;
-  }
-
-  .selecao-de-personagens {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .selecao-de-personagens .lista-de-personagens{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-  }
-
-  .selecao-de-personagens .personagens {
-    background-color: brown;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 585px;
-    gap: 25px;
-  }
-
-  .selecao-de-personagens .personagens .titulo {
-    font-size: 20px;
-    font-weight: bold;
-  }
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  max-height: 220px;
+  max-width: 220px;
+}
+.selecao-de-personagens {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  min-height: calc(100vh - 220px);
+}
+.selecao-de-personagens .lista-de-personagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.selecao-de-personagens .personagens {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 585px;
+}
+.selecao-de-personagens .personagens .titulo {
+  border-bottom: 2px solid var(--cor2);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.lista-de-personagens .personagens img {
+  height: 100%;
+  width: 100%;
+}
+.lista-de-personagens .personagem.selecionado {
+  box-shadow: 0px 0px 24px 5px var(--cor1);
+}
+.personagem-selecionado {
+  max-height: 530px;
+  text-align: center;
+}
+.personagem-selecionado .personagem-grande {
+  height: 430px;
+  width: 430px;
+}
+.personagem-selecionado .nome-personagem {
+  border-bottom: 2px solid var(--cor2);
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.personagem-selecionado .descricao-personagem {
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+  text-align: center;
+  width: 420px;
+}
