@@ -40,4 +40,8 @@
         font-size: 16px;
         margin: 20px auto;
     }
+
+    .lista-de-personagens .personagem.selecionado {
+        box-shadow: 0px 0px 0px 5px var(--cor1);
+      }
 }
